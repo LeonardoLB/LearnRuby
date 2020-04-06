@@ -1,23 +1,25 @@
 class Hero
-    @name = nil
-    @age = nil
-    @weapon = "Woden Sword"
-    @level = 1
+    attr_accessor :name
+    attr_accessor :age
+    attr_reader   :weapon
+    attr_reader   :level
 
 
     def setHeroAtributes(name, age)
         @name = name
         @age = age
+        @weapon = "Wooden Sword"
+        @level = 1
     end
 
     def upLevel(lvl = 1)
-        @level = lvl
+        @level += lvl
 
-        if(@level > 3)
+        if @level > 3
             @weapon = "Golden Sword"
         end
 
-        if(@level > 10)
+        if @level > 10
             @weapon = "Soul Sword"
         end
     end
@@ -37,5 +39,5 @@ hero1.setHeroAtributes("Leo", 23)
 hero1.show_hero
 hero1.upLevel(2)
 hero1.show_hero
-# hero1.upLevel(10)
+hero1.upLevel(10)
 hero1.show_hero
