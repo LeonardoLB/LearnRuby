@@ -1,0 +1,6 @@
+### GEMFILE ###
+### JUST RUN `bundle`
+
+source 'https://rubygems.org'
+
+gem 'cpf_utils'
