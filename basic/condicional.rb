@@ -19,3 +19,8 @@ case v1
     else 
         puts "[case]nada no case"
 end
+
+case v1
+    when 1..2
+        puts "[case] você escolheu 1 a 2"
+end

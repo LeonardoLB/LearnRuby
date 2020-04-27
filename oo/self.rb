@@ -13,6 +13,6 @@ end
 
 Warrior.Scream
 # Warrior.Atack ## linha vai dar erro pq n
-
+# é um metodo de classe e sim de instancia.
 wrrior =  Warrior.new
 wrrior.Atack
